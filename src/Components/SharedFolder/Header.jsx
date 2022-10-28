@@ -16,7 +16,7 @@ const Header = () => {
             .catch(error => Swal.fire(error.message))
     }
     return (
-        <div>
+        <div className='bg-purple-400'>
             <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
                 <div className='relative flex items-center justify-between'>
                     <Link
@@ -109,10 +109,21 @@ const Header = () => {
                                         Login
                                     </Link>
                                 </li>
+
                             </>
 
 
                         }
+                        <li>
+                            <Link
+                                to='/faq'
+                                aria-label='faq'
+                                title='faq'
+                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            >
+                                FAQ
+                            </Link>
+                        </li>
 
                         <li>
                             <label for="Toggle1" className="inline-flex items-center space-x-4 cursor-pointer text-gray-900">
@@ -229,11 +240,21 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <label for="Toggle1" className="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100">
+                                                <Link
+                                                    to='/faq'
+                                                    aria-label='faq'
+                                                    title='faq'
+                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                >
+                                                    FAQ
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <label for="Toggle1" className="inline-flex items-center space-x-4 cursor-pointer text-gray-900">
                                                     <span>Light</span>
                                                     <span className="relative">
                                                         <input id="Toggle1" type="checkbox" className="hidden peer" />
-                                                        <div className="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-violet-400"></div>
+                                                        <div className="w-10 h-6 rounded-full shadow-inner dark:bg-gray-900  bg-violet-200"></div>
                                                         <div className="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
                                                     </span>
                                                     <span>Dark</span>

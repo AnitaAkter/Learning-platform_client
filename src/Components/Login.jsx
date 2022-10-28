@@ -65,7 +65,7 @@ const Login = () => {
 
 
     return (
-        <div className='grid justify-center lg:grid-cols-2 sm:grid-cols-1'>
+        <div className='grid justify-center bg-purple-300 lg:grid-cols-2 sm:grid-cols-1'>
             <div className="w-full max-w-md ml-20 p-8 space-y-3 rounded-xl bg-gray-900 text-gray-100">
                 <h1 className="text-2xl font-bold text-center">Login</h1>
                 <form onSubmit={handleemailSubmit} action="" className="space-y-6 ng-untouched ng-pristine ng-valid">

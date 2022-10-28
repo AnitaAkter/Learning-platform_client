@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom"
 const ErrorPage = () => {
     return (
-        <div>
+        <div className='bg-purple-300'>
             <section className="flex items-center h-full p-16 dark:bg-gray-900 dark:text-gray-100">
                 <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
                     <div className="max-w-md text-center">

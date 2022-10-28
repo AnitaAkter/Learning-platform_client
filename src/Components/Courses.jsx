@@ -7,7 +7,7 @@ import { useLoaderData } from 'react-router-dom'
 const Courses = () => {
     const detailsCourse = useLoaderData();
     return (
-        <div className='grid grid-cols-6'>
+        <div className='grid grid-cols-6 bg-purple-300'>
             <SideBar></SideBar>
             <div className='col-span-4'>
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const DetailsCourse = ({ detailsCourse }) => {
     const { title, image_url, details, _id } = detailsCourse;
     return (
-        <div>
+        <div className='bg-purple-300'>
             <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 mb-5">
                 <img src={image_url} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
                 <div className="flex flex-col justify-between p-6 space-y-8">

@@ -19,7 +19,7 @@ const PDFCourse = () => {
     }
     return (
         <section className="dark:bg-gray-800 dark:text-gray-100">
-            <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+            <div id='downloadJsPDF' className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
                 <button onClick={handlePDFCourse} type="primary" className="inline-flex  items-center justify-center w-full h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-indigo-700 md:w-auto hover:bg-black hover:text-white  focus:shadow-outline focus:outline-none">
                     Download PDF
                 </button>
