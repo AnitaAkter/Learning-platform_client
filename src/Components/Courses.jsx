@@ -1,8 +1,8 @@
 import React from 'react';
 import DetailsCourse from './DetailsCourse';
 import SideBar from './SideBar';
-import { Link, useLoaderData } from 'react-router-dom'
-import { useState } from 'react';
+import { useLoaderData } from 'react-router-dom'
+
 
 const Courses = () => {
     const detailsCourse = useLoaderData();
