@@ -54,8 +54,8 @@ const router = createBrowserRouter([{
             element: <Blog></Blog>,
         },
         {
-            path: '/checkOut_page/:id',
-            loader: ({ params }) => fetch(`https://assignment-10-courses-server-anitaakter.vercel.app/category/${params.id}`),
+            path: '/checkout/:id',
+            loader: ({ params }) => fetch(`https://assignment-10-courses-server-anitaakter.vercel.app/checkout/${params.id}`),
             element: <PrivateRoute><Checkout_page></Checkout_page></PrivateRoute>
         },
 

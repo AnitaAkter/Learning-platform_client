@@ -47,6 +47,7 @@ const Login = () => {
             })
             .catch((error) => {
                 Swal.fire(error.message)
+                console.log(error)
             })
     }
 
