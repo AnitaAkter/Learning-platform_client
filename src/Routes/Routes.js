@@ -1,8 +1,8 @@
 import Blog from "../Components/Blog";
 import Checkout_page from "../Components/Checkout_page";
 import Courses from "../Components/Courses";
-import DetailsCourse from "../Components/DetailsCourse";
 import FAQ from "../Components/FAQ";
+import PDFCourse from "../Components/PDFCourse";
 import PrivateRoute from "../Components/PrivateRoute";
 import Register from "../Components/Register";
 
@@ -35,7 +35,7 @@ const router = createBrowserRouter([{
         {
             path: '/category/:id',
             loader: ({ params }) => fetch(`https://assignment-10-courses-server-anitaakter.vercel.app/category/${params.id}`),
-            element: <DetailsCourse></DetailsCourse>
+            element: <PDFCourse></PDFCourse>
         },
         {
             path: '/register',

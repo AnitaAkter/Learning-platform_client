@@ -18,8 +18,8 @@ const SideBar = () => {
                 <ul className="pt-2 pb-4 space-y-1 text-sm">
                     <span>
                         {sidebar.map((category) => (
-                            <button type="button" className="px-8 py-3 w-32 font-semibold border block rounded dark:border-gray-100 " key={category.id}>
-                                <Link>{category.title}</Link>
+                            <button type="button" className="px-8 py-3 w-32 font-semibold border block rounded dark:border-gray-100 " key={category._id}>
+                                <Link to={`category/${category._id}`}>{category.title}</Link>
                             </button>
                         ))}
                     </span>
