@@ -5,25 +5,22 @@ const DetailsCourse = ({ detailsCourse }) => {
     const { title, image_url, details, _id } = detailsCourse;
     return (
         <div>
-            <div className="container mx-auto">
-                <div className=" text-center">
-                    <h2 className="text-3xl font-bold">{detailsCourse.title}</h2>
-                </div>
-                <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                    <article className="flex flex-col dark:bg-gray-900">
-                        <Link rel="noopener noreferrer" to='#'>
-                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={image_url} />
-                        </Link>
-                        <div>
-                            <p>{details}</p>
-                        </div>
-                        <button className='bg-indigo-600 p-2 rounded'>
-                            <Link to={`category/${_id}`}> Details</Link>
-                        </button>
-                    </article>
+            <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 mb-5">
+                <img src={image_url} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+                <div className="flex flex-col justify-between p-6 space-y-8">
+                    <div className="space-y-2">
+                        <h2 className="text-2xl font-semibold tracking-wide">{title}</h2>
+                        <p className="dark:text-gray-100">{details}</p>
+                    </div>
+                    <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-700 text-white dark:text-gray-900">
+
+                        <Link to={`/category/${_id}`}> Read More </Link>
+                    </button>
                 </div>
             </div>
         </div>
+
+
     );
 };
 
