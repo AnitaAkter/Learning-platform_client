@@ -43,7 +43,7 @@ const Register = () => {
             photoURL: photoURL
         }
         updateProfileDetails(profile)
-            .then(() => { Swal.fire.fire("Profile has been Updated"); })
+            .then(() => { Swal.fire("Profile has been Updated"); })
             .catch(error => Swal.fire(error.message));
 
     }
